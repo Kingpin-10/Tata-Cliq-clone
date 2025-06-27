@@ -24,7 +24,7 @@ const allProducts = [
     brand: "HRX",
     category: "men",
     subcategory: "T-Shirts",
-    image: "https://m.media-amazon.com/images/I/81U1Ac4zJgL._AC_UL1500_.jpg",
+    image: "https://cdn.shopify.com/s/files/1/1346/2167/products/SS_Blue_Front.jpg?v=1490400205",
     price: 499,
   },
   {
@@ -33,7 +33,7 @@ const allProducts = [
     brand: "Levi's",
     category: "men",
     subcategory: "Jeans",
-    image: "https://m.media-amazon.com/images/I/71+eJxQo-mL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.HcPpS6j-FQahO5NuI4Ee8wAAAA?rs=1&pid=ImgDetMain",
     price: 1799,
   },
   {
@@ -42,7 +42,7 @@ const allProducts = [
     brand: "Roadster",
     category: "men",
     subcategory: "Shirts",
-    image: "https://m.media-amazon.com/images/I/71lZTJfR0HL._AC_UL1500_.jpg",
+    image: "https://i.pinimg.com/originals/6b/ca/cf/6bcacff866710545b31ebe5841a2721b.png",
     price: 799,
   },
   {
@@ -51,7 +51,7 @@ const allProducts = [
     brand: "Nike",
     category: "men",
     subcategory: "Jackets",
-    image: "https://m.media-amazon.com/images/I/71+HqLTn3sL._AC_UL1500_.jpg",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b0addc76-1f85-4fd5-b95b-4ae2011f950d/life-mens-padded-hooded-jacket-WCSgvl.png",
     price: 2499,
   },
   {
@@ -60,7 +60,7 @@ const allProducts = [
     brand: "U.S. Polo",
     category: "men",
     subcategory: "T-Shirts",
-    image: "https://m.media-amazon.com/images/I/61RxVMBjoZL._AC_UL1500_.jpg",
+    image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/14185962/2021/4/25/5bfbfbf7-9a60-4e50-a9b1-42477a3f0a871619341472053USPoloAssnMenRedStripedRoundNeckT-shirt1.jpg",
     price: 599,
   },
   {
@@ -69,7 +69,7 @@ const allProducts = [
     brand: "Wrangler",
     category: "men",
     subcategory: "Jeans",
-    image: "https://m.media-amazon.com/images/I/81GFZbQnRPL._AC_UL1500_.jpg",
+    image: "https://i5.walmartimages.com/seo/Wrangler-Men-s-Slim-Straight-Fit-Jean-with-Stretch_bf2f5e7f-3fa7-4d3c-8c0f-94f9c328a063.0eb1f2c542ebfce23e6f16e1e223041e.jpeg",
     price: 1599,
   },
 
@@ -80,7 +80,7 @@ const allProducts = [
     brand: "FabIndia",
     category: "women",
     subcategory: "Kurtis",
-    image: "https://m.media-amazon.com/images/I/61A5Bw9rREL._AC_UL1500_.jpg",
+    image: "https://i.etsystatic.com/25355596/r/il/e65001/3210293412/il_1588xN.3210293412_hhgh.jpg",
     price: 1199,
   },
   {
@@ -89,7 +89,7 @@ const allProducts = [
     brand: "Only",
     category: "women",
     subcategory: "Tops",
-    image: "https://m.media-amazon.com/images/I/61P+QcyfKnL._AC_UL1500_.jpg",
+    image: "https://i.pinimg.com/originals/2f/0a/48/2f0a48870d0210c7f01bbfc90b7807f7.jpg",
     price: 699,
   },
   {
@@ -98,7 +98,7 @@ const allProducts = [
     brand: "Biba",
     category: "women",
     subcategory: "Dresses",
-    image: "https://m.media-amazon.com/images/I/61zOrDE9T+L._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/R.00a218a1c1412e6b5b7fec99cd1f0e22?rik=xu1tm57oeyndJA&riu=http%3a%2f%2fbalticborn.com%2fcdn%2fshop%2ffiles%2fardley-maxi-dress-navy-pink-floral-230074.jpg%3fv%3d1714095037&ehk=cTb8IKemr2RH05HJo5Lm0DIMOV4C2oSjTDIFAY1NAF8%3d&risl=&pid=ImgRaw&r=0",
     price: 1399,
   },
   {
@@ -107,7 +107,7 @@ const allProducts = [
     brand: "Sangria",
     category: "women",
     subcategory: "Sarees",
-    image: "https://m.media-amazon.com/images/I/81RJ-QKr7gL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.7cUGS1lUkjFggTDTEuE9PAHaJ2?rs=1&pid=ImgDetMain",
     price: 999,
   },
   {
@@ -116,7 +116,7 @@ const allProducts = [
     brand: "W",
     category: "women",
     subcategory: "Kurtis",
-    image: "https://m.media-amazon.com/images/I/71F3meKj4XL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.XBk32s1aZJxJh_LAe9XKrwHaJ4?rs=1&pid=ImgDetMain",
     price: 1499,
   },
   {
@@ -125,7 +125,7 @@ const allProducts = [
     brand: "Van Heusen",
     category: "women",
     subcategory: "Tops",
-    image: "https://m.media-amazon.com/images/I/71OH4eZULAL._AC_UL1500_.jpg",
+    image: "https://n.nordstrommedia.com/id/sr3/c1f02b26-047c-404b-b64d-bcde91f825d6.jpeg?h=365&w=240&dpr=2",
     price: 749,
   },
   {
@@ -134,7 +134,7 @@ const allProducts = [
     brand: "AND",
     category: "women",
     subcategory: "Dresses",
-    image: "https://m.media-amazon.com/images/I/61V1ey1QmrL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.YasPimWbl0RtNL09MtVIYwHaJ3?rs=1&pid=ImgDetMain",
     price: 1299,
   },
   {
@@ -143,7 +143,7 @@ const allProducts = [
     brand: "Aurelia",
     category: "women",
     subcategory: "Sarees",
-    image: "https://m.media-amazon.com/images/I/81FnZdAKJpL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.eih3uhhys7bim_ReNDitfAHaJ2?rs=1&pid=ImgDetMain",
     price: 1099,
   },
 
@@ -154,7 +154,7 @@ const allProducts = [
     brand: "Adidas",
     category: "footwear",
     subcategory: "Sneakers",
-    image: "https://m.media-amazon.com/images/I/71fho1czfML._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.ulPK0B51KTeS9q6VbgagKAHaJT?rs=1&pid=ImgDetMain",
     price: 2399,
   },
   {
@@ -163,7 +163,7 @@ const allProducts = [
     brand: "Catwalk",
     category: "footwear",
     subcategory: "Flats",
-    image: "https://m.media-amazon.com/images/I/71daZqxjxzL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.bq4IoamIxsVlAT7mL5GBrwHaHa?rs=1&pid=ImgDetMain",
     price: 799,
   },
   {
@@ -172,7 +172,7 @@ const allProducts = [
     brand: "Red Tape",
     category: "footwear",
     subcategory: "Boots",
-    image: "https://m.media-amazon.com/images/I/71CMeTj3e-L._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.hE3gwlE_ildoUjTX_kreTQHaHa?rs=1&pid=ImgDetMain",
     price: 2899,
   },
   {
@@ -181,7 +181,7 @@ const allProducts = [
     brand: "Metro",
     category: "footwear",
     subcategory: "Sandals",
-    image: "https://m.media-amazon.com/images/I/81LZkGLUpjL._AC_UL1500_.jpg",
+    image: "https://i5.walmartimages.com/seo/Lilgiuy-Women-s-Platform-Heels-Sandals-Solid-Color-Chunky-High-Heel-Ankle-Strap-Open-Toe-Comfortable-Wedges-Sandal-Wedding-Party-Dress-Pump-Beige_7acdf4ee-56d2-4540-bcc1-3457a0d674df.4b870ac8023c374cbbf5edfec23d98eb.jpeg",
     price: 1099,
   },
   {
@@ -190,7 +190,7 @@ const allProducts = [
     brand: "Sparx",
     category: "footwear",
     subcategory: "Sandals",
-    image: "https://m.media-amazon.com/images/I/71QXW2L+lCL._AC_UL1500_.jpg",
+    image: "https://i.pinimg.com/originals/57/4d/8a/574d8acd907738fda55c2867362c0cff.jpg",
     price: 699,
   },
   {
@@ -199,7 +199,7 @@ const allProducts = [
     brand: "DressBerry",
     category: "footwear",
     subcategory: "Boots",
-    image: "https://m.media-amazon.com/images/I/71NxImBSmQL._AC_UL1500_.jpg",
+    image: "https://cdn.yoursclothing.com/Images/ProductImages/95ab17e3-db73-4c_154435_M.jpg",
     price: 1999,
   },
   {
@@ -208,7 +208,7 @@ const allProducts = [
     brand: "Nike",
     category: "footwear",
     subcategory: "Sneakers",
-    image: "https://m.media-amazon.com/images/I/81WOKRDeu7L._AC_UL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61hTTcbhe6L._UL1138_.jpg",
     price: 2999,
   },
   {
@@ -217,7 +217,7 @@ const allProducts = [
     brand: "Bata",
     category: "footwear",
     subcategory: "Flats",
-    image: "https://m.media-amazon.com/images/I/71fnbrcwgaL._AC_UL1500_.jpg",
+    image: "https://down-ph.img.susercontent.com/file/283a0ad131f4e009943fd7bb2fcd32ee",
     price: 1199,
   },
 
@@ -228,7 +228,7 @@ const allProducts = [
     brand: "Allen Solly",
     category: "accessories",
     subcategory: "Belts",
-    image: "https://m.media-amazon.com/images/I/61gVuD2bmFL._AC_UL1500_.jpg",
+    image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/26438832/2024/4/22/31c67cc4-c590-43e2-82ec-311e3eb7d04b1713768287372-Allen-Solly-Men-Belts-3501713768287197-1.jpg",
     price: 499,
   },
   {
@@ -237,7 +237,7 @@ const allProducts = [
     brand: "Lavie",
     category: "accessories",
     subcategory: "Bags",
-    image: "https://m.media-amazon.com/images/I/81czgCPNSZL._AC_UL1500_.jpg",
+    image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/19252386/2022/12/3/260cc880-bf08-44a6-b44e-13434044ac511670010823881LavieMelineBrownStructuredShoulderBag1.jpg",
     price: 1299,
   },
   {
@@ -246,7 +246,7 @@ const allProducts = [
     brand: "Fastrack",
     category: "accessories",
     subcategory: "Watches",
-    image: "https://m.media-amazon.com/images/I/71oCEUtbb1L._AC_UL1500_.jpg",
+    image: "https://i.pinimg.com/736x/52/aa/e9/52aae9b54901a797b1581b82cadc63c4.jpg",
     price: 1599,
   },
   {
@@ -255,7 +255,7 @@ const allProducts = [
     brand: "IDEE",
     category: "accessories",
     subcategory: "Sunglasses",
-    image: "https://m.media-amazon.com/images/I/71GOwJ4SMFL._AC_UL1500_.jpg",
+    image: "https://th.bing.com/th/id/OIP.uauCGNIurp5kaxhPlVLQQgHaLz?rs=1&pid=ImgDetMain",
     price: 999,
   },
   {
@@ -264,7 +264,7 @@ const allProducts = [
     brand: "Casio",
     category: "accessories",
     subcategory: "Watches",
-    image: "https://m.media-amazon.com/images/I/61K2UJrZj0L._AC_UL1500_.jpg",
+    image: "https://i5.walmartimages.com/asr/b8e44dc0-8fb0-49ca-863a-3a4d7cf0a0b3.0f5aac8367e553d5b57d91689c06ff6c.jpeg",
     price: 1899,
   },
   {
@@ -273,7 +273,7 @@ const allProducts = [
     brand: "Ray-Ban",
     category: "accessories",
     subcategory: "Sunglasses",
-    image: "https://m.media-amazon.com/images/I/51qUKNEd54L._AC_UL1500_.jpg",
+    image: "https://cf.shopee.co.th/file/sg-11134201-22120-7q5poqlq2alvdb",
     price: 2999,
   },
   {
@@ -282,8 +282,8 @@ const allProducts = [
     brand: "Caprese",
     category: "accessories",
     subcategory: "Bags",
-    image: "https://m.media-amazon.com/images/I/71bF+NBHnmL._AC_UL1500_.jpg",
-    price: 849,
+    image: "https://th.bing.com/th/id/OIP.9-3VGoUxKPjtJ2D2AngG9wHaJ4?rs=1&pid=ImgDetMain",
+    price: 2849,
   },
   {
     id: 32,
@@ -291,7 +291,7 @@ const allProducts = [
     brand: "Peter England",
     category: "accessories",
     subcategory: "Belts",
-    image: "https://m.media-amazon.com/images/I/71VmlO06zBL._AC_UL1500_.jpg",
+    image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/28612044/2024/4/18/7d686d22-231b-4d3d-b45c-96ee2793fdae1713437414434-Peter-England-Men-Belts-9071713437414299-1.jpg",
     price: 699,
   },
   {
@@ -300,7 +300,7 @@ const allProducts = [
   brand: "Mothercare",
   category: "kids",
   subcategory: "T-Shirts",
-  image: "https://m.media-amazon.com/images/I/81Knf-6jPuL._AC_UL1500_.jpg",
+  image: "https://th.bing.com/th/id/OIP.LqF1lUMX8IqlueEcKWRsxQHaHa?rs=1&pid=ImgDetMain",
   price: 399,
 },
 {
@@ -309,7 +309,7 @@ const allProducts = [
   brand: "Babyhug",
   category: "kids",
   subcategory: "Dresses",
-  image: "https://m.media-amazon.com/images/I/81eRpRM7-FL._AC_UL1500_.jpg",
+  image: "https://img.ltwebstatic.com/images2_pi/2019/05/24/15586870922358982951_thumbnail_600x799.jpg",
   price: 699,
 },
 {
@@ -318,7 +318,7 @@ const allProducts = [
   brand: "Gini & Jony",
   category: "kids",
   subcategory: "Jeans",
-  image: "https://m.media-amazon.com/images/I/71Y8hOIJwaL._AC_UL1500_.jpg",
+  image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/12840332/2020/12/10/c72691f3-08e0-4a89-bbae-aef28ff064fa1607599091186-Gini-and-Jony-Boys-Blue-Slim-Fit-Mid-Rise-Clean-Look-Stretch-1.jpg",
   price: 849,
 },
 {
@@ -327,7 +327,7 @@ const allProducts = [
   brand: "FirstCry",
   category: "kids",
   subcategory: "Ethnic Wear",
-  image: "https://m.media-amazon.com/images/I/71MuL4ymbQL._AC_UL1500_.jpg",
+  image: "https://ethnicexport.com/images/product/sub_images/2022/11/ACU2645-2-2022-11-02_17_20_40.jpg",
   price: 999,
 },
 {
@@ -336,7 +336,7 @@ const allProducts = [
   brand: "Adidas Kids",
   category: "kids",
   subcategory: "Shoes",
-  image: "https://m.media-amazon.com/images/I/71AY0PqUMtL._AC_UL1500_.jpg",
+  image: "https://assets.adidas.com/images/w_1880,f_auto,q_auto/913678e1c1344a90b4a5af4000f6c7f3_9366/HP5877_04_standard.jpg",
   price: 1299,
 },
 {
@@ -345,7 +345,7 @@ const allProducts = [
   brand: "Naughty Ninos",
   category: "kids",
   subcategory: "Jackets",
-  image: "https://m.media-amazon.com/images/I/81lN8-LILWL._AC_UL1500_.jpg",
+  image: "https://th.bing.com/th/id/OIP.Fx2j5qK5Tx1qZyi6dl2HjQHaHa?rs=1&pid=ImgDetMain",
   price: 899,
 },
 {
@@ -354,7 +354,7 @@ const allProducts = [
   brand: "Pantaloons Junior",
   category: "kids",
   subcategory: "Shorts",
-  image: "https://m.media-amazon.com/images/I/61v5Seorx+L._AC_UL1500_.jpg",
+  image: "https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/24763394/2023/9/1/9d641098-2387-45fd-b4f1-2e858558daa91693555904900PantaloonsJuniorBoysCoralPrintedShorts1.jpg",
   price: 499,
 },
 {
@@ -363,7 +363,7 @@ const allProducts = [
   brand: "Max Kids",
   category: "kids",
   subcategory: "Skirts",
-  image: "https://m.media-amazon.com/images/I/71PbE3Mf1eL._AC_UL1500_.jpg",
+  image: "https://i.pinimg.com/originals/a3/f2/9e/a3f29e292875464c12adf61146d75d3e.jpg",
   price: 549,
 },
 

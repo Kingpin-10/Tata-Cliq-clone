@@ -19,42 +19,65 @@ const LoginPage = () => {
   const setUser = useAuthStore((state) => state.setUser);
 
   const setupRecaptcha = () => {
-    if (!window.recaptchaVerifier) {
-      window.recaptchaVerifier = new RecaptchaVerifier(
-        "recaptcha-container",
-        { size: "invisible" },
-        auth
-      );
+    try {
+      if (!window.recaptchaVerifier) {
+        window.recaptchaVerifier = new RecaptchaVerifier(
+          "recaptcha-container",
+          {
+            size: "invisible",
+            callback: () => {
+              console.log("reCAPTCHA resolved");
+            },
+            "expired-callback": () => {
+              toast.error("reCAPTCHA expired. Please try again.");
+            },
+          },
+          auth // Make sure this is initialized from firebase.js
+        );
+
+        window.recaptchaVerifier.render().then((widgetId) => {
+          window.recaptchaWidgetId = widgetId;
+        });
+      }
+    } catch (error) {
+      console.error("reCAPTCHA setup failed:", error);
+      toast.error("reCAPTCHA initialization failed");
     }
   };
 
   const handlePhoneOtp = async () => {
-    if (!name || !phone) return toast.error("Enter name & phone number");
+    if (!name.trim()) return toast.error("Please enter your name");
+    if (!/^\d{10}$/.test(phone)) return toast.error("Enter a valid 10-digit phone number");
 
     setupRecaptcha();
 
     try {
       const appVerifier = window.recaptchaVerifier;
-      const result = await signInWithPhoneNumber(auth, "+91" + phone, appVerifier);
+      const result = await signInWithPhoneNumber(auth, `+91${phone}`, appVerifier);
       setConfirmationResult(result);
       setStep(2);
       toast.success("OTP sent to your phone");
     } catch (err) {
       console.error("OTP error:", err);
-      toast.error("Failed to send OTP");
+      toast.error(err.message || "Failed to send OTP");
     }
   };
 
   const verifyPhoneOtp = async () => {
-    if (!otp) return toast.error("Enter the OTP");
+    if (!otp.trim()) return toast.error("Enter the OTP");
 
     try {
       const result = await confirmationResult.confirm(otp);
       await updateProfile(result.user, { displayName: name });
-      setUser({ name, uid: result.user.uid, phoneNumber: result.user.phoneNumber });
+      setUser({
+        name,
+        uid: result.user.uid,
+        phoneNumber: result.user.phoneNumber,
+      });
       toast.success("Login successful");
-      navigate("/"); // ✅ Redirect to homepage
+      navigate("/");
     } catch (err) {
+      console.error("OTP verification error:", err);
       toast.error("Invalid or expired OTP");
     }
   };
@@ -72,13 +95,23 @@ const LoginPage = () => {
             onChange={(e) => setName(e.target.value)}
             className="input input-bordered w-full mb-3"
           />
-          <input
-            type="tel"
-            placeholder="Phone Number"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            className="input input-bordered w-full mb-3"
-          />
+
+          {/* Phone input with +91 prefix */}
+          <div className="flex mb-3">
+            <span className="px-3 py-2 bg-gray-200 rounded-l text-black text-sm border border-r-0 border-gray-300">
+              +91
+            </span>
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              value={phone}
+              onChange={(e) =>
+                setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))
+              }
+              className="input input-bordered w-full rounded-l-none"
+            />
+          </div>
+
           <button onClick={handlePhoneOtp} className="btn btn-primary w-full">
             Send OTP
           </button>
