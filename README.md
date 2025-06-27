@@ -1,12 +1,39 @@
-# React + Vite
+# 🛍️ Tata CLiQ Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive e-commerce web app inspired by Tata CLiQ, built with **React**, **Tailwind CSS**, **Firebase**, and **Vite**.  
+It supports product browsing, cart/favourites functionality, real-time search, and OTP-based login using Firebase.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧥 Product Listing with Sidebar Filters
+- 🛒 Add to Cart with Quantity and Toast Alerts
+- ❤️ Add to Favourites (with Count & LocalStorage)
+- 🔎 Live Search Bar (results update as you type)
+- 📱 Responsive Design for Mobile & Desktop
+- 🔐 OTP Login using Firebase (Phone Authentication)
+- 📄 Product Detail Pages with Size Selection
+- 🎯 Clean UI with Tata CLiQ Branding
+- ⚡ Built with Vite for fast performance
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Tailwind CSS, Lucide Icons
+- **Routing**: React Router DOM
+- **Authentication**: Firebase Auth (Phone OTP)
+- **State Management**: Zustand
+- **UI Notifications**: React Hot Toast
+- **Hosting**: Vercel
+
+---
+
+## 🔧 Installation
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Kingpin-10/Tata-Cliq-clone.git
+cd Tata-Cliq-clone
