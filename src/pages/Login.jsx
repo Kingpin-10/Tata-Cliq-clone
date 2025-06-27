@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
-import {
-  RecaptchaVerifier,
-  signInWithPhoneNumber,
-  updateProfile,
-} from "firebase/auth";
+import {RecaptchaVerifier,signInWithPhoneNumber,updateProfile,} from "firebase/auth";
 import { useAuthStore } from "../store/useAuthStore";
 import toast from "react-hot-toast";
 
@@ -19,31 +15,31 @@ const LoginPage = () => {
   const setUser = useAuthStore((state) => state.setUser);
 
   const setupRecaptcha = () => {
-    try {
-      if (!window.recaptchaVerifier) {
-        window.recaptchaVerifier = new RecaptchaVerifier(
-          "recaptcha-container",
-          {
-            size: "invisible",
-            callback: () => {
-              console.log("reCAPTCHA resolved");
-            },
-            "expired-callback": () => {
-              toast.error("reCAPTCHA expired. Please try again.");
-            },
+  try {
+    if (!window.recaptchaVerifier) {
+      window.recaptchaVerifier = new RecaptchaVerifier(
+        auth, // ✅ First argument must be auth
+        "recaptcha-container",
+        {
+          size: "invisible",
+          callback: () => {
+            console.log("reCAPTCHA verified");
           },
-          auth // Make sure this is initialized from firebase.js
-        );
+          "expired-callback": () => {
+            toast.error("reCAPTCHA expired. Please try again.");
+          },
+        }
+      );
 
-        window.recaptchaVerifier.render().then((widgetId) => {
-          window.recaptchaWidgetId = widgetId;
-        });
-      }
-    } catch (error) {
-      console.error("reCAPTCHA setup failed:", error);
-      toast.error("reCAPTCHA initialization failed");
+      window.recaptchaVerifier.render().then((widgetId) => {
+        window.recaptchaWidgetId = widgetId;
+      });
     }
-  };
+  } catch (error) {
+    console.error("reCAPTCHA setup failed:", error);
+    toast.error("reCAPTCHA initialization failed");
+  }
+};
 
   const handlePhoneOtp = async () => {
     if (!name.trim()) return toast.error("Please enter your name");
