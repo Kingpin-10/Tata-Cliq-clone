@@ -24,7 +24,6 @@ It supports product browsing, cart/favourites functionality, real-time search, a
 - **Frontend**: React, Tailwind CSS, Lucide Icons
 - **Routing**: React Router DOM
 - **Authentication**: Firebase Auth (Phone OTP)
-- **State Management**: Zustand
 - **UI Notifications**: React Hot Toast
 - **Hosting**: Vercel
 
